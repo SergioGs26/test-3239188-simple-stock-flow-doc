@@ -8,7 +8,7 @@ This document describes the business rules that govern products, sales, sale ite
 
 ## 2. Category Rules
 
-* A category must have a non-empty name. The domain trims the name before saving it.
+* A category must have a non-empty name. During initial seeding, category names are trimmed before being saved.
 * Category names must be unique.
 * The system uses five predefined categories created during the initial migration.
 * Categories are reference data. The current domain does not provide operations to create, rename, or delete them.

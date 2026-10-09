@@ -40,7 +40,7 @@ The data model supports the following operational needs:
 
 The data model supports planning for these capabilities:
 
-1. Product and category management or consultation.
+1. Product management and category consultation.
 2. Internal user records with `admin` and `seller` roles.
 3. Sales recording with associated sale items.
 4. Stock validation and consistent inventory updates.

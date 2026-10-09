@@ -49,7 +49,7 @@ As an administrator, I want to consult product categories so that products can b
 
 * The system uses the categories defined in the data model.
 * The five initial categories are seeded and treated as read-only.
-* Users cannot modify the initial category records through normal category management operations.
+* Users cannot modify the predefined category records.
 
 **Priority:** Proposed — High
 

@@ -14,7 +14,7 @@ The system must prevent product stock from becoming negative.
 
 The database must enforce the `stock >= 0` constraint. The domain must also reject withdrawals greater than the available stock.
 
-**Traceability:** `spec/data-model.md`, Section 2.2 and ADR-002.
+**Traceability:** `spec/data-model.md`, Sections 2.2, 3, and 4.
 
 ### NFR-02 — Preserve Sale History
 
@@ -22,7 +22,7 @@ Once a sale has been registered, its historical information must remain unchange
 
 Sale items must preserve the product name, category name, and unit price recorded at the time of the transaction.
 
-**Traceability:** `spec/data-model.md`, Sections 1, 2.3, 2.4, and ADR-004.
+**Traceability:** `spec/data-model.md`, Sections 1, 2.3, 2.4, and 6.
 
 ### NFR-03 — Maintain Transaction Consistency
 
@@ -48,7 +48,7 @@ The implementation must distinguish constraints enforced by PostgreSQL from rule
 
 The system must store password hashes instead of plain-text passwords. The domain must not receive or handle passwords in plain text.
 
-**Traceability:** `spec/data-model.md`, Section 2.5 and D-09.
+**Traceability:** `spec/data-model.md`, Sections 2.5 and 7, and decision D-09.
 
 ### NFR-06 — Validate User Roles
 
@@ -64,9 +64,9 @@ The system must recognize only the two roles defined by the model: `admin` and `
 
 Concurrent operations that modify product stock must preserve the non-negative stock invariant.
 
-The implementation must follow the concurrency strategy documented in ADR-002.
+The implementation must respect the concurrency information and stock constraints documented in the data model.
 
-**Traceability:** `spec/data-model.md`, Section 2.2 and ADR-002.
+**Traceability:** `spec/data-model.md`, Sections 2.2, 3, 4, and 10.
 
 **Not specified:** A numerical limit for simultaneous users or transactions is not defined by the data model.
 
@@ -84,13 +84,13 @@ The system must store an optional image key as a reference to external storage. 
 
 When no image is assigned, the value must be `NULL`, not an empty string.
 
-**Traceability:** `spec/data-model.md`, Sections 1, 2.2, and D-08.
+**Traceability:** `spec/data-model.md`, Sections 1 and 2.2, and decision D-08.
 
 ### NFR-10 — Calculate Sales Reports on Request
 
 Sales reports must be calculated from the stored sales information for the requested date range. Reports must not be persisted as separate database entities.
 
-**Traceability:** `spec/data-model.md`, Sections 1 and D-06.
+**Traceability:** `spec/data-model.md`, Sections 1 and 6, and decision D-06.
 
 ## 6. Requirements Not Defined by the Data Model
 

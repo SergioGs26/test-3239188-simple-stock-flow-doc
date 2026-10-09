@@ -35,6 +35,7 @@ The architecture must reflect the entities, relationships, business rules, datab
 - Sale registration and stock withdrawal must be handled atomically.
 - Completed sales are immutable through the domain operations described by the model.
 - Sale items preserve historical product information.
+- The five predefined categories are seeded and are not maintained through domain write operations.
 
 **Status:** These rules are documented. Their enforcement must be checked against the implementation status in the data model.
 

@@ -39,7 +39,7 @@ As a seller, I want to consult the product catalog so that I can identify the pr
 
 **Priority:** Proposed — High
 
-### US-03 — Manage Categories
+### US-03 — Consult Categories
 
 **User story**
 

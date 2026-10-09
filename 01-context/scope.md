@@ -9,7 +9,7 @@ This document defines the scope of Simple Stock Flow based on the requirements a
 The system includes the following capabilities:
 
 * **Product catalog:** Register and manage products with their names, prices, stock quantities, categories, and optional image keys.
-* **Category management:** Use the five predefined categories. Categories are seeded and read-only.
+* **Category consultation:** Use the five predefined categories. Categories are seeded and read-only.
 * **Stock control:** Maintain product stock and prevent stock quantities from becoming negative.
 * **Sales registration:** Register completed sales associated with an internal user.
 * **Sale items:** Store the products included in each sale, their quantities, and snapshots of product names, unit prices, and category names at the time of the sale.
